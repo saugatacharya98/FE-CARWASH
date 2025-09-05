@@ -507,6 +507,23 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess, onGoToRegistration
             </button>
           </form>
 
+          <div className="mt-6 space-y-3">
+            <div className="flex justify-between text-sm">
+              <button
+                onClick={() => setViewMode('forgot-email')}
+                className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+              >
+                Forgot Email?
+              </button>
+              <button
+                onClick={() => setViewMode('forgot-password')}
+                className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+              >
+                Forgot Password?
+              </button>
+            </div>
+          </div>
+
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{' '}
